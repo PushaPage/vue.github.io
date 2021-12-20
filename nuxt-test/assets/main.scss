@@ -1,0 +1,30 @@
+html,
+body,
+#__nuxt,
+#__layout {
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    background: rgb(242, 242, 247);
+}
+
+.layout-enter-active,
+.layout-leave-active {
+    transition: transform .5s;
+}
+
+.layout-enter,
+.layout-leave-active {
+    transform: translateY(100%);
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
